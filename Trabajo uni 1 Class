@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class coche{
+    public:
+    string marca;
+    string modelo;
+    int agno;
+
+void mostrardetalle(){
+        cout<< "Marca "<< marca<< "\nModelo "<< modelo<< "\nAño "<< agno<< endl;
+}
+
+void arrancar(){
+    cout<< "El coche ha arrancado"<< endl;
+    }
+};
+int main()
+{
+    coche micoche; // creacion de objeto "micoche"
+    micoche.marca="Toyota";
+    micoche.modelo="Corolla";
+    micoche.agno=2022;
+    
+    micoche.mostrardetalle();
+    micoche.arrancar();
+    
+    return 0;
+}
